@@ -1,7 +1,7 @@
 # Team 27: IoT Smart Mirror
-This was a senior project for CS426 at the University of Nevada, Reno 2018-2019
-Team members: Carter Brooke, Daniel Liu, and Wei Tong.
-Advisor: Shamik Sengupta
+This was a senior project for CS426 at the University of Nevada, Reno 2018-2019  
+Team members: Carter Brooke, Daniel Liu, and Wei Tong.  
+Advisor: Shamik Sengupta  
 Professors: Sergiu Dascalu and Devrin Lee.
 
 ## Hardware Setup:
