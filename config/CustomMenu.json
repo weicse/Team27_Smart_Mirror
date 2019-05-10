@@ -1,0 +1,1023 @@
+{
+	"id": "custom",
+	"type": "menu",
+	"icon": "id-card-o",
+	"text": "Module Configuration",
+	"items": [{
+		"id": "toggleurl",
+		"type": "item",
+		"icon": "eye",
+		"text": "Toggle Remote URL",
+		"action": "NOTIFICATION",
+		"content": {
+			"notification": "TOGGLE_MODULE",
+			"payload": "MMM-ip"
+		}
+	},
+	{
+		"id": "timedatemenu",
+		"type": "menu",
+		"menu": "custom",
+		"icon": "bars",
+		"text": "Time/Date Menu",
+		"items": [{
+			"id": "toggleclock",
+			"type": "item",
+			"icon": "eye",
+			"text": "Toggle Time & Date",
+			"action": "NOTIFICATION",
+			"content": {
+				"notification": "TOGGLE_MODULE",
+				"payload": "clock"
+			}
+		},
+		{
+			"id": "toggledate",
+			"type": "item",
+			"icon": "eye",
+			"text": "Toggle Date",
+			"action": "NOTIFICATION",
+			"content": {
+				"notification": "TOGGLE_DATE"
+			}
+		},
+		{
+			"id": "clockmovemenu",
+			"type": "menu",
+			"menu": "custom",
+			"icon": "bars",
+			"text": "Time & Date Position",
+			"items": [{
+				"id": "moveclock1",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Left",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "clock_top_left"
+				}
+			},
+			{
+				"id": "moveclock2",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "clock_top_center"
+				}
+			},
+			{
+				"id": "moveclock3",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Right",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "clock_top_right"
+				}
+			},
+			{
+				"id": "moveclock4",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "clock_middle_center"
+				}
+			},
+			{
+				"id": "moveclock5",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Left",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "clock_bottom_left"
+				}
+			},
+			{
+				"id": "moveclock6",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "clock_bottom_center"
+				}
+			},
+			{
+				"id": "moveclock7",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Right",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "clock_bottom_right"
+				}
+			}]
+		},
+		{
+			"id": "toggledigitalanalog",
+			"type": "item",
+			"icon": "clock-o",
+			"text": "Digital/Analog Display",
+			"action": "NOTIFICATION",
+			"content": {
+				"notification": "TOGGLE_DIGITALANALOG"
+			}
+		},
+		{
+			"id": "daycycle",
+			"type": "item",
+			"icon": "gears",
+			"text": "Change Date Format",
+			"action": "NOTIFICATION",
+			"content": {
+				"notification": "DATE_CYCLE",
+				"payload": "day"
+			}
+		},
+		{
+			"id": "digitalclockmenu",
+			"type": "menu",
+			"menu": "custom",
+			"icon": "bars",
+			"text": "Digital Clock",
+			"items": [{
+				"id": "toggleseconds",
+				"type": "item",
+				"icon": "eye",
+				"text": "Toggle Seconds",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "CLOCK_TOGGLE_SECONDS"
+				}
+			},
+			{
+				"id": "toggleampm",
+				"type": "item",
+				"icon": "eye",
+				"text": "Toggle AM/PM",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "TOGGLE_AMPM"
+				}
+			},
+			{
+				"id": "togglemilitary",
+				"type": "item",
+				"icon": "eye",
+				"text": "Toggle Military Time",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "TOGGLE_MILITARY"
+				}
+			},
+			{
+				"id": "toggleuppercase",
+				"type": "item",
+				"icon": "gear",
+				"text": "Upper/Lowercase AM/PM",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "TOGGLE_CASE"
+				}
+			}]
+		},
+		{
+			"id": "analogclockmenu",
+			"type": "menu",
+			"menu": "custom",
+			"icon": "bars",
+			"text": "Analog Clock",
+			"items": [{
+				"id": "analogdatecycle",
+				"type": "item",
+				"icon": "arrows-v",
+				"text": "Date Position",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "TOGGLE_DATE_POSITION"
+				}
+			},
+			{
+				"id": "cycleanalog",
+				"type": "item",
+				"icon": "refresh",
+				"text": "Cycle Analog Themes",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "CYCLE_ANALOG"
+				}
+			}]
+		}]
+	},
+	{
+		"id": "calendarmenu",
+		"type": "menu",
+		"menu": "custom",
+		"icon": "bars",
+		"text": "Calendar Menu",
+		"items": [{
+			"id": "togglecalendar",
+			"type": "item",
+			"icon": "eye",
+			"text": "Toggle Calendar",
+			"action": "NOTIFICATION",
+			"content": {
+				"notification": "TOGGLE_MODULE",
+				"payload": "calendar"
+			}
+		},
+		{
+			"id": "calendarmovemenu",
+			"type": "menu",
+			"menu": "custom",
+			"icon": "bars",
+			"text": "Calendar Position",
+			"items": [{
+				"id": "movecalendar1",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Left",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "calendar_top_left"
+				}
+			},
+			{
+				"id": "movecalendar2",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "calendar_top_center"
+				}
+			},
+			{
+				"id": "movecalendar3",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Right",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "calendar_top_right"
+				}
+			},
+			{
+				"id": "movecalendar4",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "calendar_middle_center"
+				}
+			},
+			{
+				"id": "movecalendar5",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Left",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "calendar_bottom_left"
+				}
+			},
+			{
+				"id": "movecalendar6",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "calendar_bottom_center"
+				}
+			},
+			{
+				"id": "movecalendar7",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Right",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "calendar_bottom_right"
+				}
+			}]
+		}]
+	},
+	{
+		"id": "weathermenu",
+		"type": "menu",
+		"menu": "custom",
+		"icon": "bars",
+		"text": "Weather Menu",
+		"items": [{
+			"id": "togglecurrentweather",
+			"type": "item",
+			"icon": "eye",
+			"text": "Toggle Weather",
+			"action": "NOTIFICATION",
+			"content": {
+				"notification": "TOGGLE_MODULE",
+				"payload": "currentweather"
+			}
+		},
+		{
+			"id": "currentweathermovemenu",
+			"type": "menu",
+			"menu": "custom",
+			"icon": "bars",
+			"text": "Weather Position",
+			"items": [{
+				"id": "movecurrentweather1",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Left",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "currentweather_top_left"
+				}
+			},
+			{
+				"id": "movecurrentweather2",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "currentweather_top_center"
+				}
+			},
+			{
+				"id": "movecurrentweather3",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Right",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "currentweather_top_right"
+				}
+			},
+			{
+				"id": "movecurrentweather4",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "currentweather_middle_center"
+				}
+			},
+			{
+				"id": "movecurrentweather5",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Left",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "currentweather_bottom_left"
+				}
+			},
+			{
+				"id": "movecurrentweather6",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "currentweather_bottom_center"
+				}
+			},
+			{
+				"id": "movecurrentweather7",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Right",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "currentweather_bottom_right"
+				}
+				}]
+			},
+			{
+				"id": "currentweatherupdatemenu",
+				"type": "menu",
+				"menu": "custom",
+				"icon": "bars",
+				"text": "Weather Settings",
+				"items": [{
+					"id": "currenttoggleicon",
+					"type": "item",
+					"icon": "eye",
+					"text": "Toggle Extra Info",
+					"action": "NOTIFICATION",
+					"content": {
+						"notification": "TOGGLE_ICON",
+						"payload": "currentweather"
+					}
+				},{
+					"id": "currenttoggleFEELSLIKE",
+					"type": "item",
+					"icon": "eye",
+					"text": "Toggle Feels Like",
+					"action": "NOTIFICATION",
+					"content": {
+						"notification": "TOGGLE_FEELSLIKE",
+						"payload": "currentweather"
+					}
+				},
+				{
+					"id": "currenttoggleshowhidefc",
+					"type": "item",
+					"icon": "eye",
+					"text": "Toggle Units",
+					"action": "NOTIFICATION",
+					"content": {
+						"notification": "TOGGLE_SHOW_HIDE_FC",
+						"payload": "currentweather"
+					}
+				},
+				{
+					"id": "currenttogglefc",
+					"type": "item",
+					"icon": "gears",
+					"text": "Toggle °F/°C System",
+					"action": "NOTIFICATION",
+					"content": {
+						"notification": "TOGGLE_FC",
+						"payload": "currentweather"
+					}
+				},
+				{
+					"id": "currenttoggleroundtemp",
+					"type": "item",
+					"icon": "gear",
+					"text": "Toggle Rounding",
+					"action": "NOTIFICATION",
+					"content": {
+						"notification": "TOGGLE_ROUNDTEMP",
+						"payload": "currentweather"
+					}
+				}]
+			}]
+	},
+	{
+		"id": "forecastweathermenu",
+		"type": "menu",
+		"menu": "custom",
+		"icon": "bars",
+		"text": "Forecast Menu",
+		"items": [{
+			"id": "toggleforecastweather",
+			"type": "item",
+			"icon": "eye",
+			"text": "Toggle Weather Forecast",
+			"action": "NOTIFICATION",
+			"content": {
+				"notification": "TOGGLE_MODULE",
+				"payload": "weatherforecast"
+			}
+		},
+		{
+			"id": "forecastweathermovemenu",
+			"type": "menu",
+			"menu": "custom",
+			"icon": "bars",
+			"text": "Forecast Position",
+			"items": [{
+				"id": "moveforecastweather1",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Left",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "weatherforecast_top_left"
+				}
+			},
+			{
+				"id": "moveforecastweather2",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "weatherforecast_top_center"
+				}
+			},
+			{
+				"id": "moveforecastweather3",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Right",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "weatherforecast_top_right"
+				}
+			},
+			{
+				"id": "moveforecastweather4",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "weatherforecast_middle_center"
+				}
+			},
+			{
+				"id": "moveforecastweather5",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Left",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "weatherforecast_bottom_left"
+				}
+			},
+			{
+				"id": "moveforecastweather6",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "weatherforecast_bottom_center"
+				}
+			},
+			{
+				"id": "moveforecastweather7",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Right",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "weatherforecast_bottom_right"
+				}
+			}]
+		},
+		{
+			"id": "forecastweatherupdatemenu",
+			"type": "menu",
+			"menu": "custom",
+			"icon": "bars",
+			"text": "Forecast Settings",
+			"items": [{
+				"id": "forecasttoggleshowhidefc",
+				"type": "item",
+				"icon": "eye",
+				"text": "Toggle Units",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "TOGGLE_SHOW_HIDE_FC",
+					"payload": "weatherforecast"
+				}
+			},
+			{
+				"id": "forecasttoggleicon",
+				"type": "item",
+				"icon": "eye",
+				"text": "Toggle Weather Icons",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "TOGGLE_ICON",
+					"payload": "weatherforecast"
+				}
+			},
+			{
+				"id": "forecasttogglefc",
+				"type": "item",
+				"icon": "gears",
+				"text": "Toggle °F/°C System",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "TOGGLE_FC",
+					"payload": "weatherforecast"
+				}
+			},
+			{
+				"id": "forecasttoggleroundtemp",
+				"type": "item",
+				"icon": "gear",
+				"text": "Toggle Rounding",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "TOGGLE_ROUNDTEMP",
+					"payload": "weatherforecast"
+				}
+			},
+			{
+				"id": "forecastincreasedaysshown",
+				"type": "item",
+				"icon": "search-plus",
+				"text": "Increase Days (Max 5)",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "INCREASE_FORECAST",
+					"payload": "weatherforecast"
+				}
+			},
+			{
+				"id": "forecastdecreasedaysshown",
+				"type": "item",
+				"icon": "search-minus",
+				"text": "Decrease Days (Min 1)",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "DECREASE_FORECAST",
+					"payload": "weatherforecast"
+				}
+			}]
+		}]
+	},
+	{
+		"id": "newsmenu",
+		"type": "menu",
+		"menu": "custom",
+		"icon": "bars",
+		"text": "News Menu",
+		"items": [{
+			"id": "togglenews",
+			"type": "item",
+			"icon": "eye",
+			"text": "Toggle News",
+			"action": "NOTIFICATION",
+			"content": {
+				"notification": "TOGGLE_MODULE",
+				"payload": "newsfeed"
+			}
+		},
+		{
+			"id": "newsmovemenu",
+			"type": "menu",
+			"icon": "bars",
+			"text": "News Position",
+			"items": [{
+				"id": "movenews1",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Centered",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "newsfeed_top_bar"
+				}
+			},
+			{
+				"id": "movenews2",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "newsfeed_middle_center"
+				}
+			},
+			{
+				"id": "movenews3",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Centered",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "newsfeed_bottom_bar"
+				}
+			}]
+		}]
+	},
+	{
+		"id": "stocksmenu",
+		"type": "menu",
+		"menu": "custom",
+		"icon": "bars",
+		"text": "Stocks Menu",
+		"items": [{
+			"id": "togglestocks",
+			"type": "item",
+			"icon": "eye",
+			"text": "Toggle Stocks",
+			"action": "NOTIFICATION",
+			"content": {
+				"notification": "TOGGLE_MODULE",
+				"payload": "MMM-Stock"
+			}
+		},
+		{
+			"id": "stocksmove",
+			"type": "menu",
+			"menu": "custom",
+			"icon": "bars",
+			"text": "Stocks Position",
+			"items": [{
+				"id": "movestocks1",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Left",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-Stock_top_left"
+				}
+			},
+			{
+				"id": "movestocks2",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-Stock_top_center"
+				}
+			},
+			{
+				"id": "movestocks3",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Right",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-Stock_top_right"
+				}
+			},
+			{
+				"id": "movestocks4",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-Stock_middle_center"
+				}
+			},
+			{
+				"id": "movestocks5",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Left",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-Stock_bottom_left"
+				}
+			},
+			{
+				"id": "movestocks6",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-Stock_bottom_center"
+				}
+			},
+			{
+				"id": "movestocks7",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Right",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-Stock_bottom_right"
+				}
+			}]
+		}]
+	},
+	{
+		"id": "trafficmenu",
+		"type": "menu",
+		"menu": "custom",
+		"icon": "bars",
+		"text": "Traffic Menu",
+		"items": [{
+			"id": "toggletraffic",
+			"type": "item",
+			"icon": "eye",
+			"text": "Toggle Traffic",
+			"action": "NOTIFICATION",
+			"content": {
+				"notification": "TOGGLE_MODULE",
+				"payload": "MMM-Traffic"
+			}
+		},
+		{
+			"id": "trafficmove",
+			"type": "menu",
+			"menu": "custom",
+			"icon": "bars",
+			"text": "Traffic Position",
+			"items": [{
+				"id": "movetraffic1",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-Traffic_top_bar"
+				}
+			},
+			{
+				"id": "movetraffic2",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-Traffic_middle_center"
+				}
+			},
+			{
+				"id": "movetraffic3",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-Traffic_bottom_bar"
+				}
+			}]
+		}]
+	},
+	{
+		"id": "ubermenu",
+		"type": "menu",
+		"menu": "custom",
+		"icon": "bars",
+		"text": "Uber Menu",
+		"items": [{
+			"id": "toggleuber",
+			"type": "item",
+			"icon": "eye",
+			"text": "Toggle Uber",
+			"action": "NOTIFICATION",
+			"content": {
+				"notification": "TOGGLE_MODULE",
+				"payload": "MMM-uber"
+			}
+		},
+		{
+			"id": "ubermove",
+			"type": "menu",
+			"menu": "custom",
+			"icon": "bars",
+			"text": "Uber Position",
+			"items": [{
+				"id": "moveuber1",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Left",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-uber_top_left"
+				}
+			},
+			{
+				"id": "moveuber2",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-uber_top_center"
+				}
+			},
+			{
+				"id": "moveuber3",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Top Right",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-uber_top_right"
+				}
+			},
+			{
+				"id": "moveuber4",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-uber_middle_center"
+				}
+			},
+			{
+				"id": "moveuber5",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Left",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-uber_bottom_left"
+				}
+			},
+			{
+				"id": "moveuber6",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Center",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-uber_bottom_center"
+				}
+			},
+			{
+				"id": "moveuber7",
+				"type": "item",
+				"icon": "arrows",
+				"text": "Bottom Right",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "MOVE_MODULE",
+					"payload": "MMM-uber_bottom_right"
+				}
+			}]
+		},
+		{
+			"id": "ubertype",
+			"type": "menu",
+			"menu": "custom",
+			"icon": "bars",
+			"text": "Uber Type",
+			"items": [{
+				"id": "moveuber1",
+				"type": "item",
+				"icon": "user",
+				"text": "UberX",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "UBER_TYPE",
+					"payload": "uberx"
+				}
+			},
+			{
+				"id": "moveuber2",
+				"type": "item",
+				"icon": "user-plus",
+				"text": "UberXL",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "UBER_TYPE",
+					"payload": "uberxl"
+				}
+			},
+			{
+				"id": "moveuber3",
+				"type": "item",
+				"icon": "users",
+				"text": "Both",
+				"action": "NOTIFICATION",
+				"content": {
+					"notification": "UBER_TYPE",
+					"payload": "both"
+				}
+			}]
+		}]
+	}]
+}

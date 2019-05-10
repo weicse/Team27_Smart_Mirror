@@ -1,0 +1,11 @@
+body {
+
+ }
+
+/*
+Custom CSS option that removed extra space below newsfeed module due to
+hidden parts of module that took up extra space
+*/
+.region.bottom.bar .container .module.newsfeed {
+        height: 0px;
+}
